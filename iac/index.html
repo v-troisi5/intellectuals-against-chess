@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Intellectuals against Chess</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
+</head>
+
+<body>
+
+<header>
+  <a href="#home" class="site-title">Intellectuals against Chess</a>
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark mode" onclick="toggleTheme()">♚</button>
+</header>
+
+<section id="home" class="page active">
+  <h1>Intellectuals against Chess</h1>
+
+  <div class="buttons">
+    <button class="main-button" onclick="showRandom()">Random quote</button>
+    <button class="main-button" onclick="showList()">List of quotes</button>
+  </div>
+</section>
+
+
+<section id="random" class="page">
+  <div class="random-container">
+    <div class="random-quote" id="randomQuote"></div>
+    <div class="random-author" id="randomAuthor"></div>
+  </div>
+
+  <div class="buttons random-buttons">
+    <button class="main-button" onclick="showRandom()">Random quote</button>
+    <button class="main-button" onclick="showList()">List of quotes</button>
+  </div>
+</section>
+
+<section id="list" class="page">
+  <h1>All quotes.</h1>
+  <div class="quote-list" id="quoteList"></div>
+</section>
+
+</body>
+
+</html>
