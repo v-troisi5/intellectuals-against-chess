@@ -13,7 +13,7 @@ async function loadQuotes(){
   }
   catch (error)
   {
-    console.error("Error loading quotes", error);
+    console.error("Error loading quotes");
   }
 }
 
